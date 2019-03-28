@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/startblue">
+
+        <ImageView
+            android:id="@+id/equi_pic"
+            android:layout_width="344sp"
+            android:layout_height="230sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="10sp"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/upper">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/upper"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Provider Name     : "
+                    android:textColor="#000"
+                    android:padding="10sp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/provider_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:padding="10sp"
+                    android:textSize="20sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact Detail      : "
+                    android:textColor="#000"
+                    android:padding="10sp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/provider_mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Equipment Type  : "
+                    android:textColor="#000"
+                    android:padding="10sp"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/equi_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10sp"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1sp"
+                android:background="#c1b8b8"
+                android:layout_marginTop="5sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="10sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5sp"
+                android:text="Description          : "
+                android:textColor="#000"
+                android:padding="10sp"
+                android:textSize="20sp" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/equi_desciption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minLines="1"
+                    android:layout_marginLeft="55sp"
+                    android:padding="10sp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:lines="5" />
+
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_marginTop="5sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rent Price                : "
+                    android:padding="10sp"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10sp"
+                    app:srcCompat="@drawable/ic_attach_money_black_24dp"/>
+
+                <TextView
+                    android:id="@+id/equi_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/send_request"
+                android:layout_width="300sp"
+                android:layout_height="55sp"
+                android:layout_gravity="center"
+                android:background="#ea1111"
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="25sp"
+                android:text="Send Request"
+                android:textColor="#FFF"
+                android:textSize="18sp"
+                android:theme="@style/Base.AlertDialog.AppCompat.Light" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

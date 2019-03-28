@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/layout_gallery"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/ic_photo_size_select_actual_black_24dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallery"
+            android:textSize="13sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_camera"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            app:srcCompat="@drawable/ic_camera_alt_black_24dp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Camera"
+            android:textSize="13sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="17sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_remove"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="16sp"
+            app:srcCompat="@drawable/ic_delete_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove"
+            android:textSize="13sp"
+            android:layout_marginTop="5sp"
+            android:layout_marginLeft="18sp"
+            android:textColor="#000000"/>
+
+    </LinearLayout>
+
+</LinearLayout>

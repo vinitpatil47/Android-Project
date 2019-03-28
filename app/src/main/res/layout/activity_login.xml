@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:id="@+id/upper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50sp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/emil_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:hint="Email Id"
+                android:inputType="textEmailAddress"
+                android:padding="15sp"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="350sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25sp">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15sp"
+                android:textColor="#000" />
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="20sp"
+            android:background="@color/red"
+            android:padding="15sp"
+            android:text="Login"
+            android:textColor="#FFF"
+            android:clickable="true"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+
+        android:layout_marginTop="15sp"
+        android:layout_below="@+id/upper">
+
+        <TextView
+            android:id="@+id/new_user"
+            android:layout_width="75sp"
+            android:layout_height="20sp"
+            android:layout_marginLeft="20sp"
+            android:text="New User"
+            android:textColor="@color/red"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/forget_password"
+            android:layout_width="130sp"
+            android:layout_height="25sp"
+            android:text="Forget Password"
+            android:layout_marginLeft="125sp"
+            android:textColor="@color/red"
+            android:textSize="17sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

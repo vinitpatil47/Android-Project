@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEquipmentActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/equipment_register"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:layout_marginLeft="238sp"
+                    android:layout_marginTop="190sp">
+
+                    <ImageButton
+                        android:id="@+id/profilebutton"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_camera_alt_black_24dp" />
+
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20sp"
+                        android:text="Enter Equipment Details"
+                        android:textColor="#000"
+                        android:textSize="25sp" />
+
+                    <ImageButton
+                        android:id="@+id/equ_pic"
+                        android:layout_width="150sp"
+                        android:layout_height="150sp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25sp"
+                        android:background="@color/white" />
+
+                    <Spinner
+                        android:id="@+id/equi_type"
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="25sp"
+                        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                        android:padding="25sp" />
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/equ_description"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                            android:gravity="top|left"
+                            android:hint="Description"
+                            android:inputType="text"
+                            android:lines="2"
+                            android:maxLines="3"
+                            android:minLines="1"
+                            android:padding="15sp"
+                            android:scrollbars="vertical"
+                            android:textColor="#000" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="350sp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="15sp">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/equ_price"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                            android:hint="Rent Price"
+                            android:inputType="number"
+                            android:padding="15sp"
+                            android:textColor="#000" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <Button
+                        android:id="@+id/save"
+                        android:layout_width="350sp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginTop="15sp"
+                        android:background="@color/startblue"
+                        android:text="Add"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </RelativeLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

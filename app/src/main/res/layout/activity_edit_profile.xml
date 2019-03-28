@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfileActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200sp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="35sp"
+            android:layout_height="35sp"
+            android:layout_marginLeft="218sp"
+            android:layout_marginTop="80sp">
+
+            <ImageButton
+                android:id="@+id/profilebutton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ic_camera_alt_black_24dp"/>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/toplinearlayout"
+            android:background="@color/startblue"
+            android:layout_width="match_parent"
+            android:layout_height="200sp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profileimage"
+                android:layout_width="95dp"
+                android:layout_height="100sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25sp" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="200sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:gravity="center"
+                android:importantForAutofill="no"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="250sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30sp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="45sp"
+            android:paddingStart="45sp">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:srcCompat="@drawable/ic_email_black_24dp" />
+
+            <EditText
+                android:id="@+id/email"
+                android:layout_width="225sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="25sp"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="25sp"
+            android:paddingLeft="45sp"
+            android:paddingStart="45sp">
+
+            <ImageView
+                android:layout_width="40sp"
+                android:layout_height="40sp"
+                app:srcCompat="@drawable/ic_phone_android_black_24dp"
+                android:contentDescription="TODO" />
+
+            <EditText
+                android:id="@+id/mobile"
+                android:layout_width="225sp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25sp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#000000"
+                android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="250sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="45sp"
+            android:background="@android:color/holo_blue_dark"
+            android:text="Save"
+            android:textColor="#FFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

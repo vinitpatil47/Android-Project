@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".RenterHomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card"
+            android:layout_width="250sp"
+            android:layout_height="75sp"
+            android:layout_marginTop="14dp"
+            android:layout_alignParentRight="true"
+            app:cardBackgroundColor="@color/cardview"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="25sp"
+                android:gravity="center"
+                android:text="Device Location OFF"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/thank"
+                android:layout_width="100sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="35sp"
+                android:text="No,Thanks"
+                android:layout_marginLeft="5sp"
+                android:background="@color/startblue"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/enable"
+                android:layout_width="130sp"
+                android:layout_height="35sp"
+                android:layout_marginTop="35sp"
+                android:text="Enable Location"
+                android:layout_marginLeft="115sp"
+
+                android:background="@color/startblue"
+                android:textColor="@color/white"/>
+        </android.support.v7.widget.CardView>
+
+
+
+        <LinearLayout
+            android:id="@+id/no_equipment_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:background="@drawable/ic_add_circle_outline_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:gravity="center"
+                android:text="Equipments"
+                android:layout_marginTop="25sp"
+                android:layout_gravity="center"
+                android:textColor="@color/red"
+                android:textSize="25sp"/>
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="When you add Equipments,they will appear here"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:textSize="15sp"
+                android:textColor="@color/green"/>
+
+            <TextView
+                android:layout_width="300sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="40sp"
+                android:textSize="15sp"
+                android:text="Click on Add button to add Equipments"
+                android:textColor="@color/green"/>
+
+        </LinearLayout>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/equipment_row"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:id="@+id/no_uploaded_equi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="150sp"
+                android:layout_height="150sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:background="@drawable/ic_report_black_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25sp"
+                android:gravity="center"
+                android:text="Sorry, We Don't have any Equipment Registration from near by your Place"
+                android:textColor="@color/red"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="250sp"
+                android:layout_height="wrap_content"
+                android:text="When Someone provider will find near by you,they will see here"
+                android:gravity="center"
+                android:textColor="@color/green"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

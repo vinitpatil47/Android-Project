@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "677734474183",
+    "firebase_url": "https://farmzone-a7a0a.firebaseio.com",
+    "project_id": "farmzone-a7a0a",
+    "storage_bucket": "farmzone-a7a0a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:677734474183:android:933e0cdc9d7019e4",
+        "android_client_info": {
+          "package_name": "com.example.vinit.farmzone"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "677734474183-7kc3f9osaqsg9krbpi6a0d3n217khaht.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vinit.farmzone",
+            "certificate_hash": "6662facb06828483fc5c97f5cd963381bf0e2558"
+          }
+        },
+        {
+          "client_id": "677734474183-78l75btsdup3h5miptd527i77oj4pcfo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4A8v9iacFCoLOX5tZtp2Ow-AQgEgVKIo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "677734474183-78l75btsdup3h5miptd527i77oj4pcfo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

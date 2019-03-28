@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5sp">
+
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300sp"
+        android:text="HIII"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:background="@drawable/addchat"
+        android:backgroundTint="#FFF"
+        android:padding="15sp"/>
+
+</RelativeLayout>

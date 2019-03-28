@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home_black_24dp"/>
+
+    <item
+        android:id="@+id/requests"
+        android:title="Requests"
+        android:icon="@drawable/ic_favorite_black_24dp"/>
+
+    <item
+        android:id="@+id/accepted_requests"
+        android:title="Accepted"
+        android:icon="@drawable/ic_grade_black_24dp"/>
+
+    <item
+        android:id="@+id/chats"
+        android:title="Chat"
+        android:icon="@drawable/ic_chat_black_24dp"/>
+
+</menu>

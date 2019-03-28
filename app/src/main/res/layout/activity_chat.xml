@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/message_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/chat_user"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/message_layout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="56sp">
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="47sp"
+            android:layout_alignParentBottom="true"
+            android:backgroundTint="#FFF"
+            android:background="@drawable/addchat"
+            android:layout_marginLeft="5sp"
+            android:gravity="center_vertical"
+            android:padding="13sp"
+            android:hint="Type a message"
+            android:layout_marginBottom="5sp"
+            android:layout_marginRight="50sp"/>
+
+        <ImageView
+            android:id="@+id/send_msg"
+            android:layout_width="45sp"
+            android:layout_height="47sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="5sp"
+            android:clickable="true"
+            app:srcCompat="@drawable/ic_send_black_24dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
